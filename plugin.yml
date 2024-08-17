@@ -1,0 +1,73 @@
+#file: noinspection YAMLSchemaValidation
+
+###
+### Required configuration for all plugins
+###
+
+# A name for the plugin
+name: Guilded
+
+# Full class name of class implementing Neucore\Plugin\ServiceInterface or Neucore\Plugin\GeneralInterface.
+phpClass: Neucore\Plugin\Guilded\Plugin
+
+# PHP namespace that should be loaded by the PSR-4 autoloader.
+psr4Prefix: Neucore\Plugin\Guilded
+
+# Relative (to this file) path to the directory containing the classes of the above namespace.
+psr4Path: src
+
+
+###
+### Required configuration for service plugins
+###
+
+# Defines if this service allows only one account per player instead of one per character.
+oneAccount: true
+
+# List of available account properties, possible values: username, password, email, status, name
+properties: [username, status]
+
+# If this is not enabled and the account contains a password (see properties), the user will be able to see
+# it only once directly after it was reset (see actions).
+showPassword: false
+
+# List of actions, possible values: update-account, reset-password
+actions: [update-account]
+
+
+###
+### Optional configuration for all plugins
+###
+
+# Additional configuration for the plugin (supports multiline text). This is provided as the value of
+# the PluginConfiguration::$configurationData property.
+configurationData: |
+  ServerName: Your Server
+  ServerLink: https://www.guilded.gg/Your-Server
+  InviteLink: https://www.guilded.gg/i/g4H3sgsw # optional
+  BotAccessToken: 
+  AuthChannelId: 
+
+
+###
+### Optional configuration for service plugins
+###
+
+# List of link buttons. Placeholders for URL: {plugin_id}, {username}, {password}, {email}
+URLs:
+  -
+    url: /plugin/{plugin_id}/link
+    title: Link Guilded account
+    target: _self
+
+# Text above the list of accounts (supports multiline text).
+textTop:
+
+# Text below account table (supports multiline text).
+textAccount:
+
+# Text below the registration form/button (supports multiline text).
+textRegister:
+
+# Text below an account with status "pending" (supports multiline text).
+textPending:

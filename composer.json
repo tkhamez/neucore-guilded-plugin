@@ -1,0 +1,18 @@
+{
+    "name": "tkhamez/neucore-guilded-plugin",
+    "autoload": {
+        "psr-4": {
+            "Neucore\\Plugin\\Guilded\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "tkhamez/neucore-plugin": "^4.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "sort-packages": true
+    }
+}
