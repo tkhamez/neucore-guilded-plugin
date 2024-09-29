@@ -1,5 +1,7 @@
 {
     "name": "tkhamez/neucore-guilded-plugin",
+    "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Neucore\\Plugin\\Guilded\\": "src/"
