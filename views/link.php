@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <title>Link Guilded account</title>
     <!--suppress HtmlUnknownTarget -->
-    <link href="/plugin/guilded/style.css" rel=" stylesheet">
+    <link href="/plugin/theme-dark.css" rel=" stylesheet">
 </head>
 <body>
 <h1>Link Guilded account</h1>

@@ -1,11 +1,11 @@
 # Neucore Guilded Plugin
 
-_Needs [Neucore](https://github.com/tkhamez/neucore) version 2.5.0 or higher._
+_Needs [Neucore](https://github.com/tkhamez/neucore) version 2.6.0 or higher._
 
 This plugin will link [Guilded](https://www.guilded.gg) accounts to 
 [Neucore](https://github.com/tkhamez/neucore) accounts.
 
-**Note: This is work in progress, it's not yet functional.**
+**Note: This is a proof of concept, it's not fully functional yet.**
 
 ## Setup Guilded Server
 
@@ -15,7 +15,6 @@ This plugin will link [Guilded](https://www.guilded.gg) accounts to
 
 ## Install Plugin
 
-- The content of the `web` directory must be deployed to `web/plugin/guilded`.
 - In Neucore, create a new Guilded service in the plugin administration.
 - Add the required values to the configuration data.
 
